@@ -19,5 +19,16 @@ int main() {
     } else {
         cout << "negative" << endl;
     }
+    int a;
+    cin >> a;
+    if (a>0) {
+        cout << "positive" << endl;
+    } else if (a<0) {
+        cout << "negative" << endl;
+    } else if (a==0) {
+        cout << "zero" << endl;
+    } else {
+        cout << "invalid input" << endl;
+    }
     
 }
