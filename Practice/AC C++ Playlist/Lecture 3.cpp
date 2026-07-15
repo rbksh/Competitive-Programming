@@ -178,13 +178,15 @@ int main() {
     cout << SUM << endl;
 
     //to check if a number is prime or not
-    int Number = 5;
-    // cin >> Number;
-    for (i=2;i<=Number;i++) {
-        if (Number%i==0) {
-            cout << "not prime" << endl;
+    int someNumber;
+    cin >> someNumber;
+    for (i=2; i<someNumber;i++) {
+        if (someNumber%i==0) {
+            cout << "the number is not prime" << endl;
         } else {
-            cout << "prime" << endl;
+            cout << "the number is prime" << endl;
         }
     }
+    
+
 }
