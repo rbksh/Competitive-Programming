@@ -179,6 +179,7 @@ int main() {
 
     //to check if a number is prime or not
     int someNumber;
+    cout << "please enter a number to check if its prime or not" << endl;
     cin >> someNumber;
     for (i=2; i<someNumber;i++) {
         if (someNumber%i==0) {
