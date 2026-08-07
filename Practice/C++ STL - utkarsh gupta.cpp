@@ -39,8 +39,8 @@ int main() {
     //implementing data-branching analogy to understand O(n^2) complexity
     int N=100;
     int STEPS2 = 0;
-    for (int i=0;i<N;i++) {
-        for (int j=0;j<N;j++) {
+    for (int i=0;i<N;i++) { //runs n times
+        for (int j=0;j<N;j++) { //runs n*n times, its like 10 people in a party, and everyone shakes hands with everyone else(excluding themselves) only once to introduce themselves, so total handshakes = 10*10 = 100
             STEPS2+=1;
         }
     }
