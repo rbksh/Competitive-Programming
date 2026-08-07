@@ -35,5 +35,15 @@ int main() {
     }
     cout << STEPS << endl;
     return 0;
+
+    //implementing data-branching analogy to understand O(n^2) complexity
+    int N=100;
+    int STEPS2 = 0;
+    for (int i=0;i<N;i++) {
+        for (int j=0;j<N;j++) {
+            STEPS2+=1;
+        }
+    }
+    cout << STEPS2 << endl;
     
 }
