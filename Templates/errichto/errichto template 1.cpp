@@ -7,9 +7,7 @@ using namespace std;
 
 void solve() {
     // Your main logic goes here
-    int n;
-    cin >> n;
-    cout << n << endl;
+
 }
 
 int main() {
