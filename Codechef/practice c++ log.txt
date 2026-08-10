@@ -2,3 +2,6 @@
 2. solving last problem in variables and datatypes module
 3. completed 2nd module of variables and datatypes
 4. finished 60% module of algorithmic problems module, rest locked because i don't have premium, lol.
+
+PS: scope of code in cpp means the int main() {} function where the logic of the code is written, defined by curly braces.
+5. finished all problems of conditional statements module, rest are locked because of the lack of codechef premium subscription, lol.
