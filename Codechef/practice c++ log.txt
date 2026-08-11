@@ -5,4 +5,4 @@
 
 PS: scope of code in cpp means the int main() {} function where the logic of the code is written, defined by curly braces.
 5. finished all problems of conditional statements module, rest are locked because of the lack of codechef premium subscription, lol.
-6;.
+6. finished till last problems approx 35% of next module
