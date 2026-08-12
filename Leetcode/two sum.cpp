@@ -26,3 +26,4 @@ int main() {
 
     return 0;
 }
+//good problem for nested loops.
