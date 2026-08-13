@@ -11,6 +11,7 @@ int main() {
     if (m>=1 && n>=1 && m<=16 && n<=16) {
         if (m<=n) {
             vector<int> nums(n);
+            nums.push_back()
         }
     }
 }
