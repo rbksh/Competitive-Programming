@@ -181,8 +181,18 @@ void explainSort() {
     vector <int> Vt{5,100};
     sort(Vt.begin(),Vt.end()); //end is not included, start included.
     sort(a,a+n, greater<int>()); //sort in descending order.
-    
 
+    pair<int,int> arr[] = {{1,2},{3,4},{4,5},{7,2}};
+
+    bool comp(pair<int,int> p1, pair<int,int> p2) {
+        if (p1.second <= p2.second) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    cout << comp({1,2},{3,4}) << endl;
 
 }
 
