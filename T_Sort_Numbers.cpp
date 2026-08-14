@@ -18,7 +18,7 @@ int main() {
         } else {
             cout << a << endl << c << endl << b << endl;
         }
-    } else { // c is the largest
+    } else { 
         if (a >= b) {
             cout << b << endl << a << endl << c << endl;
         } else {

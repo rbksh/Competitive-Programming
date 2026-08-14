@@ -11,15 +11,15 @@
 using namespace std;
 
 int main() {
-    string n;
+    double n;
     cin >> n;
-    int a = stoi(n);
-    float b = stof(n);
+    long long integer_part = (long long)n; //convers the value of n into a big whole number and stores it in a new variable named integer_part, if it has a decimal point, it drops it. 
+    double decimal_part = n-integer_part;
 
-    if (stoi(n) == a) {
-        cout << "int" << endl;
-    } else if (stof(n) == b) {
-        cout << "float" << endl;
+    if (decimal_part == 0) {
+        cout << "int " << integer_part << endl;
+    } else {
+        cout << "float " << integer_part << " " << decimal_part << endl;
     }
     return 0;
 }
