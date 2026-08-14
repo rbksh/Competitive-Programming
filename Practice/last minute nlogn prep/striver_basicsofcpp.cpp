@@ -3,7 +3,8 @@ using namespace std;
 
 
 void printName(string name) {
-    cout << "hey " << s << endl;
+    string name;
+    cout << "hey " << name << endl;
 }
 
 int main() {
@@ -12,6 +13,7 @@ int main() {
     freopen("output.txt", "w", stdout);
 
 #endif
+    
     // int day;
     // cin >> day;
 
