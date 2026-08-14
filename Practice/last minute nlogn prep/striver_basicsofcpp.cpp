@@ -3,7 +3,6 @@ using namespace std;
 
 
 void printName(string name) {
-    string name;
     cout << "hey " << name << endl;
 }
 
@@ -83,6 +82,13 @@ int main() {
 
     for (int i=0;i<=5,i++) {
         cout << arr[i] << endl;
+    }
+
+    int grid[100];
+
+    for (int i=1;i<=100;i++) {
+        cin >> grid[i];
+        cout << i << endl;
     }
 
 
