@@ -1,3 +1,9 @@
+/*
+i watched the complete c++ STL in one video on striver's yt channel, on the day of my screening contest
+for the selection into my college's competitive programming club lmao.
+lesson learnt? be prepared in advanced, if ur not prepared, then don't expect results
+altho great video ngl
+*/
 #include <bits/stdc++.h>
 using namespace std;
 
