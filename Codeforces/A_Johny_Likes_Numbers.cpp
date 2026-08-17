@@ -27,5 +27,6 @@ int main() {
     cout << ans << endl;
     
     return 0;
+    //trying out the vim text editor lmao, why did i even install the app, could have done it in the terminal. 
     
 }
