@@ -9,6 +9,7 @@ int countdataBranches(int n) {
 }
 
 int main() {
+//so that we can give input in one text file, and get the desired output in another text file, for smoothness and ease of use.
 #ifndef ONLINE_JUDGE
     freopen("input.txt", "r", stdin);
     freopen("output.txt", "w", stdout);
