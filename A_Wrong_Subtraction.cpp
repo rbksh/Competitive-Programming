@@ -11,20 +11,21 @@
 
 using namespace std;
 
-int main() {
+int main () {
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
 
-    int t;
-    if(!(cin >> t)) 
+    long long n; int k;
+    if (!(cin >> n >> k)) return 0;
 
-    if (t>=1 && t<=25) {
-        while (t--) {
-            int x;
-            cin >> x;
-            int ChefinaAge = x-10;
-            cout << ChefinaAge << endl;
+    for (int i=1; i<=k; i++) {
+        int lastDigit = n%10;
+        if (lastDigit == 0) {
+            n=n/10;
+        } else if (lastDigit!=0) {
+            n=n-1;
         }
     }
+    cout << n << endl;
     return 0;
 }
