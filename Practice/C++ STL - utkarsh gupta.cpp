@@ -1,4 +1,14 @@
-#include <bits/stdc++.h>
+#include <iostream>
+#include <vector>
+#include <string>
+#include <algorithm>
+#include <numeric>
+#include <map>
+#include <unordered_map>
+#include <queue>
+#include <set>
+#include <cmath>
+
 using namespace std;
 //implementing data-branching analogy to understand O(2^n) complexity
 int countdataBranches(int n) {
