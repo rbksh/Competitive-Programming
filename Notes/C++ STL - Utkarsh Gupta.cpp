@@ -1,8 +1,19 @@
-#include <bits/stdc++.h>
+#include <iostream>
+#include <vector>
+#include <string>
+#include <algorithm>
+#include <numeric>
+#include <map>
+#include <unordered_map>
+#include <queue>
+#include <set>
+#include <cmath>
+
+
 using namespace std;
 
 int main() {
-#ifndef ONLINE_JUDGE
+    #ifndef ONLINE_JUDGE
     freopen("input.txt", "r", stdin);
     freopen("output.txt", "w", stdout);
 
@@ -12,9 +23,8 @@ int main() {
 
     long long t;
     if(!(cin >> t)) return 0;
-
     while (t--) {
-        //your solution goes here
+        //solution goes here
     }
-    
+
 }
