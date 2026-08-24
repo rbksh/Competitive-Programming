@@ -15,15 +15,10 @@ int main () {
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
 
-    string s,t;
-    if(!(cin >> s >> t)) return 0;
+    string s;
+    if(!(cin >> s)) return 0;
 
-    reverse(s.begin(),s.end())
-    if (s==t) {
-        cout << "YES" << endl;
-    } else {
-        cout << "NO" << endl;
-    }
+    
 
 
 }
