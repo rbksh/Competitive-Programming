@@ -18,8 +18,14 @@ int main () {
     string s;
     if(!(cin >> s)) return 0;
 
-    
+    for (int i=0; i<=s.length()-1; i++) {
+        if (s[i] != 'A') {
+            s[i] = '.';
+        }
+    }
+    cout << s << endl;
 
 
+    return 0;
 
 }
