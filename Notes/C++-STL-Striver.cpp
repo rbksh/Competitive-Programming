@@ -128,6 +128,23 @@ void explainList() {
     
 }
 
+void explainDeque() {
+    deque <int> dq;
+    //all functions similar to list and vectors
+    dq.push_back(1);
+    dq.push_front(0);
+    dq.emplace_back(2);
+    dq.emplace_front(3);
+    dq.pop_back(); //last element removed
+    dq.pop_front(); // first element removed 
+    dq.front(); // returns the value stored at 0th index of the list 
+    dq.back(); //returns the value stored at last index of the list 
+    //dq.front/dq.back = some value, to change the first and last values in the list 
+    //rest functions same as list and vector 
+    
+    
+}
+
 
 
 int main() {
