@@ -33,13 +33,15 @@ int main () {
         newNum=newNum/10;
     }
 
+    int newnumber;
+
     for (int x: digits) {
         for (int y: newDigits) {
             if (x==y) {
                 newNum+=1;
             } else if (x!=y) {
                 for (int z: newDigits) {
-                    int newnumber = newNum*10 + z;
+                    newnumber = newNum*10 + z;
                 }
             }
         }

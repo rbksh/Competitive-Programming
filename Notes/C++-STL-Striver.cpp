@@ -28,7 +28,7 @@ void explainPair() {
     
     //we can also declare pairs in an array, with multiple pairs as single elements of an array 
     pair <int ,int> arr[] = {{1,2},{3,4},{5,6}};
-    cout << arr[1].second << endl; //2nd element of the pair at the 1st index of the array 
+    cout << arr[1].second << endl; //2nd element of the pair at the 1st index of the array, ie 4 in this case.
     
 }
 
