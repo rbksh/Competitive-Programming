@@ -270,6 +270,15 @@ void explainMultiSet() {
     //rest all functions same as set. 
     
 }
+//Unordered Sets
+
+void explainUSet() {
+    //only follows unique rule, not the sorted rule, stores all the elements as it is, but all elements will be unique , has randomized order.  
+    unordered_set <int> st; // declaration 
+    //lower_bound and upper_bound functions do not work here, rest all functions are similar to set, with O(1) time complexity. 
+    
+//in very rare cases, when the data is abnormally large and the user wants us to explore the worst case possible scenario, O(logn) complexity is seen. 
+}
 
 int main() {
     print();
