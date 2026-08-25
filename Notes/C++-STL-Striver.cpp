@@ -309,6 +309,21 @@ void explainMap() {
 //all other functions like erase swap size and empty are same 
 }
 
+//Multi-maps
+
+void explainMultiMap() {
+    //here we can store duplicate keys, but they will be stored in the sorted order only, ie, increasing order by default. 
+    //mpp[key] cannot be used here since duplicate keys are stored and one particular key can correspond to multiple values. 
+}
+
+//Unordered Maps
+
+void explainUnorderedMap() {
+    //same as multimaps, it will store unique keys but not in the sorted order, they will be randomized. 
+    
+    //has 0(1) complexity in most cases, but shows 0(n) in worse possible cases. 
+}
+
 int main() {
     print();
     
