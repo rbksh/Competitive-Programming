@@ -209,10 +209,49 @@ void explainPQ() {
     
     cout << pq.top() << endl; // prints 2 in this case, the element at the top, which is the minimum element out of all in the pq
     //pq.push() and pq.pop() has logarithmic complexity, ie, O(logn), and pq.top() has constant time complecity, ie, O(1)
-    
-    
 }
 
+//Sets 
+void explainSets() {
+    //it stores everything in the sorted order, and all elements are unique.
+    //sorted by default means storing all the elements in increasing / non-decreasing order. 
+    set <int> st;  //declaration 
+    st.insert(1);
+    st.insert(2);
+    st.emplace(2); //will not store the element 2 again
+    st.insert(3);
+    st.insert(5);
+    st.insert(4);
+    //{1,2,3,4,5}
+    //this is not a linear container, a tree data structure is maintained inside it. 
+    //this functionality of insert can also be used with vectors, it increases its efficiency 
+    //begin end rbegin rend swap size empty are same as other containers 
+    
+    auto it = st.find(3); //returns an iterator which points to the 3, if found, if not found, it points an iterator to st.end(), which is out of scope of the length of the set. 
+    
+    if (it!=st.end()) {
+        cout << *(it) << endl; //will print 3 in this case, since we used *(it), also called de-referencing. just printing it will cause a compilation error. st.end() causes undefined behavriour like SEGSEV(segmentation fault) or a crash.
+    }
+    
+    st.erase(5); //erases 5 from the set, O(logn) time complexity of this function. 
+    
+    int cnt = st.count(5); //the count function will either return 0 or 1, since set is both unique and sorted, so one element can occur a maximum of 1 time, or it will not occur at all, that's it. 
+    
+    //another way to erase using the memory address using an iterator 
+    auto it = st.find(3);
+    st.erase(it); // O(1) is the time complexity of this function 
+    
+    auto it1 = st.find(1);
+    auto it2 = st.find(4);
+    st.erase(it1,it2); //will erase all elements between the elements which correspond to it1 and it2, it2 not included, it1 included. 
+    
+    //lower bound and upper bound video to be watched 
+    
+//most functions in set have 0(logn) time complexity.
+
+
+    
+}
 
 int main() {
     print();
