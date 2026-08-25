@@ -324,6 +324,79 @@ void explainUnorderedMap() {
     //has 0(1) complexity in most cases, but shows 0(n) in worse possible cases. 
 }
 
+//here we are basically making pairs of 2 pairs at once, and then comparing them one by one simultaneously, so that all pairs of pair can be evaluated when the comp func is called. 
+
+bool comp (pair <int,int> p1, pair <int,int> p2) {
+    //here we are assuming, p2 lies after p1. 
+    if (p1.second < p2.second) return true; 
+    if (p1.second > p2.second) return false;
+    //if they are same
+    if (p1.second == p2.second)  {
+        if (p1.first > p2.first) return true;
+        return false;
+    }
+}
+
+
+//Algorithms Start 
+
+
+void explainExtra() {
+    //lets say we have been given an array of size n, how will we sort it using one function? without using any fancy algos 
+    sort(a,a+n); // [first, last). last not included here since it points to a memory index which is out of the scope of the length of the declared array. 
+    vector <int> v;
+    sort(v.begin(),v.end()); //in case of vectors 
+    
+    //if we only want a certain portion of an array to be sorted? 
+    sort(a+2,a+4);
+    sort(v.begin()+2,v.begin()+4); 
+    // only the mentioned portion will be sorted, rest will remain as it is.
+    
+    //to sort in decreasing order? 
+    sort(a,a+n,greater <int> ); 
+    sort(v.begin(),v.end(),greater <int>); //starting and ending iterators mentioned.
+    //greater <int> is an in-built function btw 
+    
+ //now how do we sort the array in a very specific order, which is a combination of increasing and decreasing but subject to certain conditions
+ 
+ 
+     pair <int,int> arr[] = {{1,2},{2,1}
+ 
+ //rule, sort according to 2nd element, if 2nd element is same, then sort it according to first element but in descending order. 
+ 
+    sort(a,a+n,comp); //here comp is a self-written comperitor, which is nothing but a boolean function. 
+    
+    //to return number of setbits, ie, the number of 1s in the binary representation of a specific number 
+    int num = 6;
+    int count = __builtin_popcount(); //only for integer format
+    cout << count << endl; //will return 2, since 6 is 110 in binary 
+    
+    //for long long data type 
+    
+    int num = 1234567890;
+    long long cnt = __builtin_popcountll(); 
+    cout << cnt << endl; 
+    
+    //to print all permutations of a particular string
+    string s = "123";
+    sort(s.begin(),s.end());
+    
+    do {
+        cout << s << endl;
+    } while(next_permutation(s.begin(), s.end()));
+    
+    //after all permutations have been printed, it returns 0 or null or false at the end. 
+    
+    // **V IMP** - all the permutations(meaning all possible permutations) will only be printed if that string is stored in the sorted order, else, lets say we store it as 231, then first permutations of 2 then permutations of 3 will only be printed, permutations of 1 will be left behind. 
+    
+    //to find out maximum and minimum elements present inside an array 
+    int maxElement = *max_element(a,a+n);
+    int minElement = *min_element(a,a+n);
+    cout << maxElement << endl << minElement << endl;
+    
+    
+}
+
 int main() {
     print();
     
