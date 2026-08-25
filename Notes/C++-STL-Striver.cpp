@@ -181,6 +181,37 @@ void explainQueue() { //FIFO rule - first in first out, the element which is sto
     //swap, size, empty same as stack's operations 
     
 }
+//PQ - priority queue 
+
+void explainPQ() {
+//Maximum Heap
+    priority_queue <int> pq; // declaration
+    // the element which has the largest value, stays at the top, ie, at the 0th index of the PQ. numerically in int/float/double, largest char in characters, lexigraphically largest in case of strings 
+    pq.push(5);
+    pq.push(2);
+    pq.push(8);
+    pq.push(10);
+    //{10,8,5,2}
+    // this is not a linear data structure, inside a PQ, a tree data structure is mainted.
+    
+    cout << pq.top() << endl; //prints 10 in this case .
+    pq.pop(); //removes the topmost element from the PQ, 10 in this case. 
+    //size ,swap, empty function same as stack, dq, and queue. 
+
+//Minimum Heap 
+    //how to declare a PQ which stores element from minimum to maximum, in the reverse order of the old-fashioned PQ
+    priority_queue <int, vector <int>, greater <int>> pq;
+    pq.push(5);
+    pq.push(2);
+    pq.push(8);
+    pq.emplace(10);
+    //{2,5,8,10}
+    
+    cout << pq.top() << endl; // prints 2 in this case, the element at the top, which is the minimum element out of all in the pq
+    //pq.push() and pq.pop() has logarithmic complexity, ie, O(logn), and pq.top() has constant time complecity, ie, O(1)
+    
+    
+}
 
 
 int main() {
