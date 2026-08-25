@@ -119,6 +119,8 @@ void explainVector() {
     
 }
 
+//Lists
+
 void explainList() {
     list <int> ls; //declaration, very similar to vector, only diff is that it allows us to do front operations as well
     ls.push_back(4);
@@ -127,6 +129,8 @@ void explainList() {
     ls.emplace_front(7); //all other functions similar to vector
     
 }
+
+//Deque
 
 void explainDeque() {
     deque <int> dq;
@@ -141,10 +145,42 @@ void explainDeque() {
     dq.back(); //returns the value stored at last index of the list 
     //dq.front/dq.back = some value, to change the first and last values in the list 
     //rest functions same as list and vector 
-    
-    
 }
 
+//Stacks
+
+void explainStack() { //LIFO Rule - last in first out, the element going inside the stack last, will be the first one to come out of the stack
+    stack <int> st;
+    st.push(1); //to add elements into the stack 
+    st.push(2);
+    st.push(3);
+    st.push(4);
+    st.emplace(5);
+    // {5,4,3,2,1} - this is how the stack looks like 
+    cout << st.top() << endl; //prints 5, since it is stored at the 0th index 
+    st.pop(); // removes 5 from the stack 
+    cout << st.pop() << endl; //will now print 4, since 5 has been removed from the stack 
+    cout << st.size() << endl << st.empty() << endl; //other functions similar to vector, list and, deque
+    //all operatiosn in stack take place in constant time, ie, O(1). 
+    stack <int> st1,st2; //to declare more than one stacks in one line 
+    st1.swap(st2); //to swap the data of st1 to st2 and vice versa 
+}
+
+//Queue 
+
+void explainQueue() { //FIFO rule - first in first out, the element which is stored first, is the same element which comes out the first. 
+    queue <int> q;
+    q.push(1);
+    q.emplace(2);
+    q.push(3);
+    
+    q.back()+=5;
+    
+    cout << q.back() << endl << q.front() << endl; //corresponds to last and first elements that entered the stack 
+    //all operations in a queue take place in constant time, ie, O(1).
+    //swap, size, empty same as stack's operations 
+    
+}
 
 
 int main() {
