@@ -28,18 +28,17 @@ void explainPair() {
     
     //we can also declare pairs in an array, with multiple pairs as single elements of an array 
     pair <int ,int> arr[] = {{1,2},{3,4},{5,6}};
-    cout << arr[1].second << endl; //2nd element of the pair at the 1st index of the array, ie 4 in this case.
+    cout << arr[1].second << endl; //2nd element of the pair at the 1st index of the array 
     
 }
 
 //vectors 
-
 void explainVector() {
     vector <int> v; //declaration, data type and name can be varied, obv. it is a dynamic sized array, can be modified, where as normal array cannot be modified, it is dynamic in nature, arrays are static in nature.
     //above line creates an empty vector or an empty container
     
     v.push_back(1); //adds 1 to the vector
-    v.emplace_back(2) // //dyanmically increases the size and adds 2 to the back. emplace is faster than push, why? 
+    v.emplace_back(2); // //dyanmically increases the size and adds 2 to the back. emplace is faster than push, why? 
     // push back first creates a copy of the object which is to be stored at a particular memory position, after cloning, it calles a constructor which puts it in the required memory location and then destroyes the original one because it is of no use since the copied one is to be stored in the memory, so in total the entire cost comes up to = 1 build + 1 clone + 1 destroy.
     //in emplace back, it directly calls the constructor at the place the data is to be put in the exact memory location, no cloning, no destryoing. will show significant amount of diff in execution time when dealing with large data
     
@@ -118,7 +117,14 @@ void explainVector() {
     vect1.clear() //removes all the data from vect 1, turning it into an empty container 
     cout << vect1.empty() << endl; //gives true if the vector is empty, meaning has no elements, shows false even if it has 1 element. 
     
-        
+}
+
+void explainList() {
+    list <int> ls; //declaration, very similar to vector, only diff is that it allows us to do front operations as well
+    ls.push_back(4);
+    ls.emplace_back(2);
+    ls.push_front(5); //adds 5 to the 0th index of the list, ie, inserting it from the left side, instead of right side which we usually see in vectors
+    ls.emplace_front(7); //all other functions similar to vector
     
 }
 
