@@ -248,8 +248,26 @@ void explainSets() {
     //lower bound and upper bound video to be watched 
     
 //most functions in set have 0(logn) time complexity.
+}
 
+//Multi-sets
 
+void explainMultiSet() {
+    //follows only sorted rule, not the unique rule. will store all occurences of a single element, but will arrange them in increasing/non-decreasing order by default 
+    multiset <int> ms;
+    ms.insert(1);
+    ms.insert(1);
+    ms.insert(1);
+    //{1,,1,1}
+    //using the erase function on 1 particular element erases all its occurences inside that particular multiset
+    int cnt = ms.count(1); //will count all the occurences of the element 1 in the multi-set ms.
+    ms.erase(1); //{}, now an null multi-set 
+    
+    ms.erase(ms.find(1)); //erases only the first occurence of the element 1 in the multi-set. 
+    ms.erase(ms.find(1),ms.find(1)+2); //[first,last); 
+    
+    //above 2 functions correspond the the memory address of that particular element, hence only first occurence is removed, not all as in the usual erase function. 
+    //rest all functions same as set. 
     
 }
 
