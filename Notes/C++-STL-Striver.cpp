@@ -280,6 +280,35 @@ void explainUSet() {
 //in very rare cases, when the data is abnormally large and the user wants us to explore the worst case possible scenario, O(logn) complexity is seen. 
 }
 
+//Maps
+
+void explainMap() {
+    //this is a kind of container which stores everything in a {key,value} fashion. where all keys are unique, values can be same or different, depending on the situation. 
+    // key can be of any datatype 
+    //it stores unique keys in the sorted order, ie, increasign/non-decreasing order. 
+    map<int,int> mpp; //<int,int> refers to data type of key and value respectively. 
+    map <int, pair<int,int>> mpp; 
+    map <pair<int,int>, int> mpp; 
+    
+    mpp[1] = 2; //corresponds to a key value pair of {1,2}
+    mpp.emplace({3,4}); 
+    mpp.insert({5,6}); 
+    
+    mpp[{2,3}] = 10; //for <pair<int,int>, int> type of key value pair 
+    
+    //to iterate on a map 
+    for (auto it: mpp) {
+        cout << it.first << " " << it.second << endl; // will print first element of the key value pair, which is the key, then the value for the first element, then will do the same with all other elements as well. 
+    }
+    //to access values of a map
+    cout << mpp[1] << endl; // prints the corresponding value pair to the key which is 1
+    cout << mpp[5] << endl; //if the key = '5' is not found, it returns 0 or null.
+    auto it = mpp.find(3); //corresponds to the memory address of the the element 3 in the map
+    cout << *(it).first << endl << *(it).second << endl; //key then value printed, if only *(it), then key value pair would have been printed. 
+    auto it = mpp.find(5); //if not found, it points to mpp.end() which is 1 more than the index of the last element in the map. 
+//all other functions like erase swap size and empty are same 
+}
+
 int main() {
     print();
     
