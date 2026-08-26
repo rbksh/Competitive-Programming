@@ -1,7 +1,13 @@
-#include <bits/stdc++.h>
+// #include <bits/stdc++.h>
+#include <iostream>
+#include <iomanip>
+#include <algorithm>
+#include <utility>
+#include <string>
+#include <vector>
+#include <map>
+
 using namespace std;
-
-
 
 //explaining functions
 //a void function doesn't return anything unless it is called in a main function
