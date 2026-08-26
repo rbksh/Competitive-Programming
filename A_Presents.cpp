@@ -27,6 +27,26 @@ int main () {
         friends.push_back(p);
     }
 
+    sort(friends.begin(),friends.end());
+    int size = friends.size();
 
+    vector <int> receivers;
 
+    for (int i = 0; i<=size-1;i++) {
+        if ((i+1) == friends[i]) {
+            receivers.push_back(friends[i]);
+        } else if ((i+1)!=friends[i]) {
+            if (friends[i] == friends[i+1]) {
+                receivers.push_back(friends[i+1]);
+            }
+        }
+    }
+
+    int sz = receivers.size();
+
+    for (int i = 0; i<=sz-1;i++) {
+        cout << receivers[i];
+    }
+
+    return 0;
 }
