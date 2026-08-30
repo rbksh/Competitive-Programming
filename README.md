@@ -1,4 +1,3 @@
-```markdown
 # Competitive Programming Workspace
 
 **Algorithmic Problem Solving and Pattern Recognition**
@@ -38,34 +37,3 @@ The repository is configured for immediate compilation and testing via file redi
 ```bash
 git clone [https://github.com/rbksh/Competitive-Programming.git](https://github.com/rbksh/Competitive-Programming.git)
 cd Competitive-Programming
-
-```
-
-### 2. Configure Your Compiler
-
-Ensure you have `g++` (GCC) installed. For local debugging, it is recommended to compile with strict warning flags and memory sanitizers to catch out-of-bounds errors before submission.
-
-```bash
-g++ -std=c++17 -Wshadow -Wall -o solution solution.cpp -fsanitize=address -fsanitize=undefined -D_GLIBCXX_DEBUG
-
-```
-
-### 3. Execution Pipeline
-
-The provided C++ templates are designed to automatically detect a local environment and route standard input/output through the local text files.
-
-1. Paste the problem's sample input into `input.txt`.
-2. Write your solution in a `.cpp` file (using the base template).
-3. Run the compiled executable.
-4. Verify the results in `output.txt`.
-
-```bash
-./solution
-
-```
-
-This setup completely decouples the logic-building phase from the browser, ensuring a distraction-free, highly efficient problem-solving workflow.
-
-```
-
-```
