@@ -61,5 +61,7 @@ Verify the results in output.txt.
 ./solution
 ```
 This setup completely decouples the logic-building phase from the browser, ensuring a distraction-free, highly efficient problem-solving workflow.
+```bash
 git clone [https://github.com/rbksh/Competitive-Programming.git](https://github.com/rbksh/Competitive-Programming.git)
 cd Competitive-Programming
+```
