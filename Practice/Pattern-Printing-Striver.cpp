@@ -12,7 +12,7 @@ void printPattern1(int n) {
     }
 }
 
-//another method for patters, can be given using test case, use the follopwing in that 
+//another method for patterns, can be given using test case, use the following in that 
 // int t;
 // cin >> t;
 // while (t--) {
@@ -84,7 +84,7 @@ void printExtraPattern(int c) {
 //Pattern 7 - pascal's triangle using stars lmao
 void printPattern7(int d) {
     for (int i = 0; i<=d;i++) {
-        for (int j = 0; j<=n-i-i;j++) {
+        for (int j = 0; j<=n-i-1;j++) {
             cout << " ";
         }
         for (int j = 0; j<=2*i+1; j++) {
