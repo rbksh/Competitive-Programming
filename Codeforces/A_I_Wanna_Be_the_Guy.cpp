@@ -22,7 +22,7 @@ int main() {
     cin >> q;
     vector<int> b(q);
     for (int i = 0; i < q; i++) {
-        cin >> b[i];
+        cin >> b[i];  
     }
 
     a.insert(a.end(), b.begin(), b.end());
