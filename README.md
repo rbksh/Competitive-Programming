@@ -12,7 +12,7 @@ Algorithmic problem solving is a perishable skill. Furthermore, solving problems
 
 This repository acts as a unified knowledge base and execution environment. Instead of writing code directly in browser editors, every problem is solved locally in Visual Studio Code. This forces accountability, allows for aggressive local debugging, and builds a personalized, searchable library of successful submissions.
 
-Chrome Extensions: Competitive Companion, CF Analytics, Codeforces Lite(because I hate light mode), CPH Submit  VS Code Extensions: CPH(Competitive Programming Helper), C/C++ Debug
+Chrome Extensions: Competitive Companion, CF Analytics, Codeforces Lite(because I hate light mode), CPH Submit<br>VS Code Extensions: CPH(Competitive Programming Helper), C/C++ Debug
 
 ## Repository Architecture
 
