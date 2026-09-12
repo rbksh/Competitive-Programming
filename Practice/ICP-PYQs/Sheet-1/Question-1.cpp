@@ -20,6 +20,7 @@
 // }
 
 //2nd method - without using vector, and using while loop
+
 #include <bits/stdc++.h>
 using namespace std;
 

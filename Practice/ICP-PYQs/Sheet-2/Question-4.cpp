@@ -19,6 +19,17 @@ int main() {
             count++;
         }
     }
+
+    int i = a;
+    bool is_prime = false;
+    while (i <= b) {
+        for (int j = 1; j <= i; j++) {
+            if (i%j == 0) {
+                is_prime = true;
+            }
+        }
+        i++;
+    }
     cout << count << endl;
     
     return 0;
