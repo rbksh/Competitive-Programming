@@ -17,30 +17,26 @@
 using namespace std;
 
 int main() {
-#ifndefONLINE_JUDGE
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
 
-    double price = 31.24;
-    int newPrice = (int)price; 
-
-    double baseBill = 0;
     int n;
     cin >> n;
 
-
-    int x = 5;
-    double y = x;
-
-    int n;
-    cin >> n;
-
+    int count = 0;
     for (int i = 1; i <= n; i++) {
         if (i%2 == 0) {
-            cout << i << endl;
-        } else {
-            cout << -1 << endl;
+            count++;
         }
     }
-    
+    if (count == 0) {
+        cout << -1 << endl;
+    } else {
+        for (int i = 1; i <= n; i++) {
+            if (i%2 == 0) {
+                cout << i << endl;
+            }
+        }
+    }
+    return 0; 
 }
