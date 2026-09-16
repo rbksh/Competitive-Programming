@@ -16,27 +16,22 @@
 */
 using namespace std;
 
-int gcdManual(int a, int b) {
-    if (a == 0 && b == 0){
-        return 0;
-    }
-
-    while (b != 0) {
-        int temp = b;
-        b = a%b;
-        a = temp;
-    }
-    return a;
-}
-
-int gcdInBuilt(int a, int b)
-
 int main() {
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
 
-    int num1,num2;
-    cin >> num1 >> num2;
-    cout << gcdManual(num1,num2) << endl;
+    int n;
+    cin >> n;
 
+    for (int i = 1; i <= n; i++) {
+        for (int j = 0; j < n - i; j++) {
+            cout << " ";
+        }
+        for (int j = 0; j < 2 * i - 1; j++) {
+            cout << "*";
+        }
+        cout << endl;
+    }
+
+    return 0;
 }
