@@ -5,10 +5,20 @@ int main() {
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
 
-    cout << "hello world!" << endl << "my name is shesh shiromani" << endl;
+    int n; 
+    cin >> n;
+    
+    vector <int> givenGifts(n + 1);
 
-    // ADD THIS TEST LINE:
-    int test; cin >> test; 
+    for (int i = 1; i <= n; i++) {
+        int p; 
+        cin >> p;
+        givenGifts[p] = i;
+    }
+
+    for (int i = 1; i <= n; i++) {
+        cout << givenGifts[i] << " ";
+    }
 
     return 0;
 }
