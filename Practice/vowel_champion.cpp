@@ -20,7 +20,7 @@ int countVowels(string s) {
 int bestWord(vector <string> words) {
     int max = words[0];
     for (int i = 0; i <= words.size()-1; i++) {
-        int newCount = countVowels(i);
+        int newCount = countVowels(words[i]);
         if (newCount > max) {
             max = newCount;
         }
