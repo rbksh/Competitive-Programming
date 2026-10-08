@@ -1,19 +1,9 @@
-#include <iostream>
-#include <vector>
-#include <string>
-#include <cmath>
-#include <iomanip>
-#include <algorithm>
-#include <numeric>
-#include <utility>
-
+#include <bits/stdc++.h>
 using namespace std;
 
 void solve() {
-    int n;
-    cin >> n;
-    string s;
-    cin >> s;
+    int n; cin >> n;
+    string s; cin >> s;
 
     vector<int> mem;
     vector<bool> printed(n + 1, false);
