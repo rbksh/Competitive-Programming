@@ -54,7 +54,7 @@ using vpd = V<pd>;
 #define pb push_back
 #define eb emplace_back
 #define ft front()
-#define bk back()
+#define bk back[]
  
 #define lb lower_bound
 #define ub upper_bound
