@@ -8,16 +8,16 @@ public class ZlInvertedVerticalTriangle {
 
         int totalRows = 2 * n - 1;
         for (int i = 0; i < totalRows; i++) {
-            int width = i;
+            int spaces = i;
             if (i >= n) {
-                width = totalRows - 1 - i;
+                spaces = totalRows - 1 - i;
             }
 
-            if (width == 0) {
+            if (spaces == 0) {
                 System.out.println("*");
             } else {
                 System.out.print("*");
-                for (int j = 0; j < width - 1; j++) {
+                for (int j = 0; j < 2 * spaces - 1; j++) {
                     System.out.print(" ");
                 }
                 System.out.println("*");
