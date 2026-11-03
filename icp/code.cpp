@@ -7,10 +7,8 @@ int main() {
 
 	int x = 5;
 	string size = x > 3 ? x > 7 ? "big":"mid":"small";
-	cout << size << endl:
+	cout << size << endl;
 
-
-
-
+	
 	return 0;
 }

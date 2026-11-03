@@ -23,5 +23,6 @@ public class NHollowTriangle {
                 System.out.println("*");
             }
         }
+        sc.close();
     }
 }

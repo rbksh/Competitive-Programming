@@ -20,5 +20,6 @@ public class RemoveKFactors {
                 }
             }
         }
+        sc.close();
     }
 }

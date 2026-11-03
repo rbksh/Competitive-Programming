@@ -27,6 +27,7 @@ public class row-wise-wave-traversal {
                     } else {
                         System.out.print(matrix[i][j] + " ");
                     }
+                    System.out.println();
                 }
             }
         }

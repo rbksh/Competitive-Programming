@@ -7,6 +7,7 @@ static boolean isArmstrong(int n) {
     while (n > 0) {
         int digit = n%10;
         sum = sum + Math.pow(digit,digitsCount);
+        n = n/10;
     }
     return (sum == temp);
 
