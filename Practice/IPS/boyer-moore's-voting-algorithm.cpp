@@ -1,6 +1,12 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+/*
+time complexity = O(N)
+space complexity = O(1)
+for brute force approach, 2 loops would be required, and time complexity = O(N^2)
+*/
+
 int main() {
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
