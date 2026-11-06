@@ -240,6 +240,7 @@ void setIO(str s = "") {
  
 void solve() {
 	// Your logic here
+	
 }
  
 int main() {
