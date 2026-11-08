@@ -20,7 +20,7 @@ int main() {
         while (temp > 0) {
             int digit = temp % 10;
             if (digit != 0) {
-                roundNumbers.push_back(digit * power);
+                roundNumbers.push_back(digit * power);  
             }
             temp = temp / 10;
             power *= 10;
@@ -30,7 +30,7 @@ int main() {
         for (int i = roundNumbers.size() - 1; i >= 0; i--) {
             cout << roundNumbers[i] << (i == 0 ? "" : " ");
         }
-        cout << "\n";
+        cout << endl;
     }
     return 0;
 }
