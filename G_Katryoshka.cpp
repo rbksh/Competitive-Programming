@@ -16,11 +16,11 @@ using namespace std;
 
 int main() {
 
-#ifndef ONLINE_JUDGE
+    #ifndef ONLINE_JUDGE
     freopen("input.txt", "r", stdin);
     freopen("output.txt", "w", stdout);
 
-#endif
+    #endif
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
 
@@ -44,7 +44,7 @@ int main() {
     long long type1 = min({n / 2, k});
     ans += type1;
 
-    cout << ans << "\n";
-    
+    cout << ans << endl;
+
     return 0;
 }

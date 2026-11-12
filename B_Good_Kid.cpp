@@ -25,7 +25,6 @@ void solve() {
     }
     
     sort(digits.begin(), digits.end());
-    
     digits[0]++;
     
     long long maxProduct = 1;
